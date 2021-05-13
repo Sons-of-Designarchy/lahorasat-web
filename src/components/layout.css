@@ -1,0 +1,90 @@
+:root {
+  --purple: #603DBD;
+  --green: #D5FC6D;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Banana Grotesk";
+  font-weight: 300;
+  src: url('../fonts/BananaGrotesk-Light.otf');
+}
+
+@font-face {
+  font-family: "Banana Grotesk";
+  font-weight: 600;
+  src: url('../fonts/BananaGrotesk-Bold.otf');
+}
+
+@font-face {
+  font-family: "Meek Display";
+  font-weight: 600;
+  src: url('../fonts/Meek_Display_Medium.ttf');
+}
+
+html, body {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Banana Grotesk', sans-serif;
+  color: var(--purple);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('../images/textura-hero.png');
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Meek Display', sans-serif!important;
+}
+
+p {
+  color: var(--purple);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 165%;
+}
+
+h1 {
+  font-size: 54px;
+
+  /* @media (max-width: 556px) {
+    font-size: 40px;
+  } */
+}
+
+h2 {
+  font-size: 44px;
+
+  /* @media (max-width: 556px) {
+    font-size: 34px;
+  } */
+}
+
+h3 {
+  font-size: 40px;
+  /* @media (max-width: 556px) {
+    font-size: 30px;
+  } */
+}
+
+.nav-link {
+  color: var(--purple)!important;
+}
+
+.hero h1 {
+  margin-top: 3rem;
+}
+
+.hero span {
+  background: var(--green);
+  transition: 0.15s all ease-in;
+}
+
+.section {
+  padding: 3rem 0;
+  border-top: 1px solid red;
+  border-bottom: 1pxc solid blue;
+}
+
