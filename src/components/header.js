@@ -2,10 +2,6 @@ import { Link } from "gatsby"
 import React from "react"
 import logo from "../images/logo.svg"
 
-const pageStyles = {
-  border: "10px solid red",
-}
-
 const Header = () => {
 
   const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -25,23 +21,23 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={scrollPosition > 0 ? 'sticky' : null} className={pageStyles}>
-      <nav className="navbar navbar-expand-lg navbar-light">
+    <header className={scrollPosition > 0 ? 'sticky' : null}>
+      <nav className="navbar navbar-expand-lg navbar-light mt-3">
         <div className="container">
-          <button className="navbar-toggler d-lg-none" type="button" onClick={() => setShowMenu(!showMenu)}>
-            <a className="navbar-brand mr-4" href="/"><img alt="Finsera" height="30" src={logo} /></a>
+          <a className="navbar-brand d-lg-none" href="/"><img alt="La Hora Sat" width="100" src={logo} /></a>
+          <button className="navbar-toggler" type="button" onClick={() => setShowMenu(!showMenu)}>
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className={showMenu ? "navbar-collapse" : "collapse navbar-collapse" }>
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+          <div className={showMenu ? "navbar-collapse justify-content-center" : "collapse navbar-collapse justify-content-center" }>
+            <ul className="d-flex align-items-center navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" activeClassName="active" to="/">Asesorias</Link>
+                <Link className="nav-link active" activeClassName="active" to="/">Asesorias</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" activeClassName="active" to="/cursos/">Cursos Online</Link>
               </li>
-              <li className="nav-item">
-                <a className="navbar-brand mr-4" href="/"><img alt="La Hora Sat" width="113" src={logo} /></a>
+              <li className="nav-item d-none d-lg-block">
+                <a href="/"><img alt="La Hora Sat" width="100" src={logo} /></a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" activeClassName="active" to="/nosotros/">Nosotros</Link>
