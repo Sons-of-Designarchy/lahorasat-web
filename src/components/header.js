@@ -36,7 +36,7 @@ const Header = () => {
               <li className="nav-item">
                 <Link className="nav-link" activeClassName="active" to="/cursos/">Cursos Online</Link>
               </li>
-              <li className="nav-item d-none d-lg-block">
+              <li className="nav-item d-none d-lg-block mx-5">
                 <a href="/"><img alt="La Hora Sat" width="100" src={logo} /></a>
               </li>
               <li className="nav-item">
