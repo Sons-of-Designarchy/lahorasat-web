@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Footer from "./footer"
 import "./layout.css"
 import Subscribe from "./subscribe"
@@ -6,9 +7,11 @@ import Subscribe from "./subscribe"
 export default function Layout({ children }) {
   return (
     <main>
-      <title>Home Page</title>
+      <Helmet>
+        <title>La hora SAT® 🤓</title>
+      </Helmet>
       {children}
-      <Subscribe />
+      {/* <Subscribe /> */}
       <Footer />
     </main>
   )

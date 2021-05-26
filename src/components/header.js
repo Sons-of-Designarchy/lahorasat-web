@@ -24,27 +24,29 @@ const Header = () => {
     <header className={scrollPosition > 0 ? 'sticky' : null}>
       <nav className="navbar navbar-expand-lg navbar-light mt-3">
         <div className="container">
-          <a className="navbar-brand d-lg-none" href="/"><img alt="La Hora Sat" width="100" src={logo} /></a>
-          <button className="navbar-toggler" type="button" onClick={() => setShowMenu(!showMenu)}>
+          <div className="d-lg-none" style={{ width: '100%', textAlign: 'center' }}>
+            <a className="navbar-brand d-lg-none" href="/"><img alt="La Hora Sat" width="100" src={logo} /></a>
+          </div>
+          {/* <button className="navbar-toggler" type="button" onClick={() => setShowMenu(!showMenu)}>
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
           <div className={showMenu ? "navbar-collapse justify-content-center" : "collapse navbar-collapse justify-content-center" }>
             <ul className="d-flex align-items-center navbar-nav">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link active" activeClassName="active" to="/">Asesorias</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" activeClassName="active" to="/cursos/">Cursos Online</Link>
-              </li>
-              <li className="nav-item d-none d-lg-block mx-5">
+              </li> */}
+              <li className="nav-item mx-5">
                 <a href="/"><img alt="La Hora Sat" width="100" src={logo} /></a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" activeClassName="active" to="/nosotros/">Nosotros</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" activeClassName="active" to="/contacto/">Contacto</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

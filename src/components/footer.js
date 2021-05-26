@@ -1,34 +1,20 @@
 import { Link } from "gatsby"
 import React from "react"
-import logo from "../images/logo.svg"
+import logo from "../images/logo-footer.svg"
+import Instagram from "../images/ig.svg";
+import Twitter from "../images/twitter.svg";
 
 const Footer = () => {
 
   return (
-    <footer className="text-center">
-      <nav className="navbar navbar-expand-lg navbar-dark mt-3">
-        <div className="container">
-          <div>
-            <ul className="d-flex align-items-center justify-content-center navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link active" activeClassName="active" to="/">Asesorias</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" activeClassName="active" to="/cursos/">Cursos Online</Link>
-              </li>
-              <li className="nav-item d-none d-lg-block mx-5">
-                <a href="/"><img alt="La Hora Sat" width="100" src={logo} /></a>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" activeClassName="active" to="/nosotros/">Nosotros</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" activeClassName="active" to="/contacto/">Contacto</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <footer className="section section-purple text-center">
+      <div className="mb-3">
+        <img alt="La Hora Sat" width="100" src={logo} />
+      </div>
+      <div className="d-flex mb-3 justify-content-center">
+        <a target="_blank" className="footer-social-link" href="https://www.instagram.com/lahorasat/"><img src={Instagram} /></a>
+        <a target="_blank" className="footer-social-link" href="https://twitter.com/lahorasat"><img src={Twitter} /></a>
+      </div>
       © 2021 La Hora Sat. Todos los derechos reservados.
     </footer>
   )

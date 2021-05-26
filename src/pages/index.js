@@ -13,9 +13,9 @@ const IndexPage = () => {
         <div className="section container">
           <div className="col-lg-10 mx-auto">
             <h1 className="hero-title text-center">
-              Todo lo que necesitas saber sobre <span>el SAT</span> y la{" "}
-              <span>vida financiera</span> contado por{" "}
-              <span>millennials para millennials</span> * 🤓💸
+              Todo lo que necesitas saber sobre <span className="bg-primary">el SAT</span> y la{" "}
+              <span className="bg-primary">vida financiera</span> contado por{" "}
+              <span className="bg-primary">millennials para millennials</span> * 🤓💸
             </h1>
           </div>
         </div>
@@ -30,15 +30,16 @@ const IndexPage = () => {
                   Pasos básicos para sobrevivir al SATanas
                 </h1>
                 <ul>
-                  <li>Sábado 06 de Febrero de 2021</li>
-                  <li>11:00 am a 13:30 pm (aprox)</li>
+                  <li>Martes 1 de junio 2021</li>
+                  <li>7:00 pm a 9:00 pm (aprox)</li>
                   <li>A través de Zoom</li>
                 </ul>
-                {/* <h3 className="mb-4">Costo: $290</h3> */}
-                <a href="#" className="btn btn-primary btn-lg mb-3 btn-floating">
-                  Reserva tu lugar - arrow right here
+                <h3 className="mb-4">Costo: $350</h3>
+                <a target="_blank" href="https://taller-basico-para-sobrevivir-al-sat.boletia.com/" className="btn btn-primary btn-lg mb-3 btn-floating">
+                  Reserva tu lugar
                 </a>
               </div>
+              <hr className="my-3 mb-5 d-md-none" />
               <div className="col-md-6">
                 <div className="p-lg-2">
                   <h4 className="text-light text-primary">¿Qué aprenderé aqui?</h4>
@@ -62,7 +63,7 @@ const IndexPage = () => {
                     incorporar y no saben cuál es el siguiente paso.{" "}
                   </p>
                   <p class="text-light font-sm">
-                    ¿Tienes un problema en específico? <a href="#" className="a-underline text-primary">Agenda una asesoria - arrow right here</a>
+                    ¿Tienes un problema en específico? <a href="#asesoria" className="a-underline text-primary">Agenda una asesoria</a>
                   </p>
                 </div>
               </div>
@@ -74,16 +75,9 @@ const IndexPage = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col col-lg-6">
-              <h3>
-                Somos una comunidad de educacion fiscal que busca{" "}
-                <span>informar</span>, <span>concientizar</span> y{" "}
-                <span>crear herramientas</span> para entender mejor al SAT
-              </h3>
+              <h2>Somos una comunidad de educación fiscal</h2>
               <p className="font-lg">
-                También damos <a href="#" className="a-underline">talleres online</a>,{" "}
-                <a href="#" className="a-underline">asesorias</a> y{" "}
-                <a href="#" className="a-underline">platicamos en medios </a>
-              </p>
+                Hacemos contenido informativo, impartimos <a target="_blank" href="https://taller-basico-para-sobrevivir-al-sat.boletia.com/" className="a-underline">cursos</a> y <a href="#asesoria" className="a-underline">asesorías personalizadas</a> que te ayudarán a entender cómo funciona el SAT.</p>
             </div>
             <div className="col col-lg-6">
               <a
@@ -97,22 +91,29 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div id="asesoria" className="container">
         <div className="mt-5 section-floating section-green text-center">
           <p className="mb-2">
             ¿Tienes dudas en específico?
           </p>
-          <h1 className="text-center">Agenda una asesoria</h1>
+          <h1 className="text-center mb-3">Agenda una asesoria personalizada</h1>
+          <div className="mb-3"><b>¿Cómo funciona?</b></div>
           <ul>
-            <li>Responde nuestro quiz para saber más de tu problema</li>
-            <li>Agenda y paga online de manera 100% segura</li>
-            <li>A través de Zoom</li>
+            <li>Cuéntanos el problema o duda que quieres resolver </li>
+            <li>Te daremos el costo por la asesoría, duración y las fechas disponibles </li>
+            <li>Te mandaremos los datos bancarios para que hagas el pago en max 24hrs  <br /><span className="font-sm">(nos tienes que mandar tu comprobante)</span></li>
+            <li>¡Listo, tu asesoría quedará agendada! <br /><span className="font-sm"> (Te enviaremos un link para unirte a un Zoom en el día y hora de tu evento)</span></li>
           </ul>
-          <a href="#" className="mt-3 btn btn-lg btn-secondary">Cónoce más y agenda -- arrow here</a>
+          <div className="d-flex justify-content-center">
+            <div style={{ marginRight: "1rem" }}>
+              <a target="_blank" href="https://www.instagram.com/lahorasat/" className="mt-3 mr-1 btn btn-lg btn-secondary">Agenda vía Instagram</a>
+            </div>
+            <a href="mailto:lahorasat@gmail.com" className="mt-3 mr-1 btn btn-lg btn-outline-secondary">o contáctanos por correo</a>
+          </div>
         </div>
       </div>
 
-      <div className="section">
+      {/* <div className="section">
         <h3 className="text-center">Nuestros servicios:</h3>
         <div className="container">
           <div className="row">
@@ -146,7 +147,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };
