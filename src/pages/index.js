@@ -74,12 +74,12 @@ const IndexPage = () => {
       <div className="section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col col-lg-6">
+            <div className="col-md-6">
               <h2>Somos una comunidad de educación fiscal</h2>
               <p className="font-lg">
                 Hacemos contenido informativo, impartimos <a target="_blank" href="https://taller-basico-para-sobrevivir-al-sat.boletia.com/" className="a-underline">cursos</a> y <a href="#asesoria" className="a-underline">asesorías personalizadas</a> que te ayudarán a entender cómo funciona el SAT.</p>
             </div>
-            <div className="col col-lg-6">
+            <div className="col-md-6">
               <a
                 href="https://instagram.com/lahorasat"
                 className="d-block"
@@ -91,7 +91,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div id="asesoria" className="container">
+      <div id="asesoria" className="container mb-5">
         <div className="mt-5 section-floating section-green text-center">
           <p className="mb-2">
             ¿Tienes dudas en específico?
@@ -104,11 +104,13 @@ const IndexPage = () => {
             <li>Te mandaremos los datos bancarios para que hagas el pago en max 24hrs  <br /><span className="font-sm">(nos tienes que mandar tu comprobante)</span></li>
             <li>¡Listo, tu asesoría quedará agendada! <br /><span className="font-sm"> (Te enviaremos un link para unirte a un Zoom en el día y hora de tu evento)</span></li>
           </ul>
-          <div className="d-flex justify-content-center">
-            <div style={{ marginRight: "1rem" }}>
+          <div className="row justify-content-center">
+            <div className="col-lg-6">
               <a target="_blank" href="https://www.instagram.com/lahorasat/" className="mt-3 mr-1 btn btn-lg btn-secondary">Agenda vía Instagram</a>
             </div>
-            <a href="mailto:lahorasat@gmail.com" className="mt-3 mr-1 btn btn-lg btn-outline-secondary">o contáctanos por correo</a>
+            <div className="col-lg-6">
+              <a href="mailto:lahorasat@gmail.com" className="mt-3 mr-1 btn btn-lg btn-outline-secondary">o contáctanos por correo</a>
+            </div>
           </div>
         </div>
       </div>
