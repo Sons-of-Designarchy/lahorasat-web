@@ -105,10 +105,10 @@ const IndexPage = () => {
             <li>¡Listo, tu asesoría quedará agendada! <br /><span className="font-sm"> (Te enviaremos un link para unirte a un Zoom en el día y hora de tu evento)</span></li>
           </ul>
           <div className="row justify-content-center">
-            <div className="col-lg-6">
+            <div className="col-lg-auto">
               <a target="_blank" href="https://www.instagram.com/lahorasat/" className="mt-3 mr-1 btn btn-lg btn-secondary">Agenda vía Instagram</a>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-auto">
               <a href="mailto:lahorasat@gmail.com" className="mt-3 mr-1 btn btn-lg btn-outline-secondary">o contáctanos por correo</a>
             </div>
           </div>
