@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Footer from "./footer"
 import "./layout.css"
-import Subscribe from "./subscribe"
+// import Subscribe from "./subscribe"
 
 export default function Layout({ children }) {
   return (
