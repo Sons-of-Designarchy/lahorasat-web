@@ -11,15 +11,15 @@ const IndexPage = () => {
   return (
     <>
     <Layout>
-      <Products />
-      <Checkout />
+      {/* <Products />
+      <Checkout /> */}
       <div className="hero">
         <Header />
         <div className="section container">
           <div className="col-lg-10 mx-auto">
             <h1 className="hero-title text-center">
               Todo lo que necesitas saber sobre <span className="bg-primary">el SAT</span> y la{" "}
-              <span className="bg-primary">vida wfinanciera</span> contado por{" "}
+              <span className="bg-primary">vida financiera</span> contado por{" "}
               <span className="bg-primary">millennials para millennials</span> * 🤓💸
             </h1>
           </div>
