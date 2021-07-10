@@ -2,7 +2,6 @@ import * as React from "react";
 import BannerCursos from "../components/banner-cursos";
 import Checkout from "../components/checkout";
 import Layout from "../components/layout";
-import Products from "../components/products/products";
 import RegisterForm from "../components/register-form";
 import Redes from "../images/redes.png";
 
@@ -11,8 +10,6 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        {/* <Products />
-      <Checkout /> */}
         <div className="hero">
           <div className="section container">
             <div className="col-lg-10 mx-auto">

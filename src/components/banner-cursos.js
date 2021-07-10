@@ -61,6 +61,7 @@ const BannerCursos = () => {
                     target="_blank"
                     href="https://taller-basico-para-sobrevivir-al-sat.boletia.com/"
                     className="btn btn-primary btn-lg mb-3 btn-floating btn-block"
+                    style={{ width: "100%" }}
                   >
                     Comprar curso
                   </a>

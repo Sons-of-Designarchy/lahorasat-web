@@ -1,19 +1,19 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import LoginForm from "../components/auth/login-form";
 import AuthLayout from "../components/auth/auth-layout";
+import RegisterForm from "../components/register-form";
 
 // markup
-const LoginPage = () => {
+const SignupPage = () => {
   return (
     <>
     <Layout>
       <AuthLayout>
-        <LoginForm />
+        <RegisterForm />
       </AuthLayout>
     </Layout>
     </>
   );
 };
 
-export default LoginPage;
+export default SignupPage;
