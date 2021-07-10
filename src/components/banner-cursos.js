@@ -15,7 +15,7 @@ const BannerCursos = () => {
               <h1 className="mb-3 text-primary">
                 Pasos básicos para sobrevivir al SATanas
               </h1>
-              <img src={prev} className="img-fluid" />
+              <img src={prev} className="img-fluid mb-4" />
             </div>
             <div className="col-md-6">
             <p className="text-light text-primary">
