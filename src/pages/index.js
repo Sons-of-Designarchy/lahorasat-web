@@ -1,6 +1,6 @@
 import * as React from "react";
+import BannerCursos from "../components/banner-cursos";
 import Checkout from "../components/checkout";
-import Header from "../components/header";
 import Layout from "../components/layout";
 import Products from "../components/products/products";
 import RegisterForm from "../components/register-form";
@@ -14,7 +14,6 @@ const IndexPage = () => {
       {/* <Products />
       <Checkout /> */}
       <div className="hero">
-        <Header />
         <div className="section container">
           <div className="col-lg-10 mx-auto">
             <h1 className="hero-title text-center">
@@ -25,6 +24,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
+      <BannerCursos />
       <div className="section">
         <div className="container">
           <div className="row align-items-center">
@@ -45,7 +45,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div id="asesoria" className="container mb-5">
+      <div id="asesorias" className="container mb-5">
         <div className="mt-5 section-floating section-green text-center">
           <p className="mb-2">
             ¿Tienes dudas en específico?

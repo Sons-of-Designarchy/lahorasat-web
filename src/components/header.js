@@ -1,6 +1,7 @@
 // import { Link } from "gatsby"
 import React, { useContext } from "react";
 import logo from "../images/logo-header.svg";
+import logoDesktop from "../images/logo.svg";
 import { AuthContext } from "../context/auth";
 import firebase from "gatsby-plugin-firebase";
 import { Link, navigate } from "gatsby";
@@ -42,9 +43,12 @@ const Header = () => {
       className={scrollPosition > 0 ? "sticky" : null}
       style={headerStyles}
     >
-      <nav className="navbar navbar-expand-lg navbar-light" style={{ padding: 0 }}>
+      <nav
+        className="navbar navbar-expand-lg navbar-light"
+        style={{ padding: 0 }}
+      >
         <div className="container">
-          <div>
+          <div className="d-lg-none">
             <a className="navbar-brand d-flex" href="/">
               <img alt="La Hora Sat" width="100" src={logo} />
             </a>
@@ -61,9 +65,11 @@ const Header = () => {
               showMenu ? "navbar-collapse" : "collapse navbar-collapse"
             }
           >
-            <ul className="d-flex align-items-center navbar-nav mr-auto">
+            <ul className="d-flex navbar-nav mr-auto">
               <li className="nav-item">
-                <a href="#asesorias" className="nav-link">Asesorias</a>
+                <a href="#asesorias" className="nav-link">
+                  Asesorias
+                </a>
               </li>
               {/* <li className="nav-item">
                 <a href="#cursos">Cursos</a>
@@ -87,7 +93,12 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <ul className="navbar-nav">
+            <div className="logo-container d-none d-lg-block">
+              <Link to="/">
+                <img alt="La Hora Sat" width="90" src={logoDesktop} />
+              </Link>
+            </div>
+            <ul className="navbar-nav ml-auto">
               {user ? (
                 <>
                   <Link
@@ -95,19 +106,20 @@ const Header = () => {
                     activeClassName="active"
                     to="app/profile/"
                   >
-                  Mi cuenta
-                </Link>
+                    Mi cuenta
+                  </Link>
                   <li className="nav-item">
-                    <button onClick={handleLogout} className="nav-link">Salir</button>
+                    <button onClick={handleLogout} className="nav-link">
+                      Salir
+                    </button>
                   </li>
                 </>
               ) : (
                 <>
-                  {/* <li className="nav-item mx-2">
-                    <a href="/register"></a>
-                  </li> */}
-                  <li className="nav-item mx-2">
-                    <a href="/login" className="nav-link">Iniciar sesión</a>
+                  <li className="nav-item">
+                    <a href="/login" className="nav-link">
+                      Iniciar sesión
+                    </a>
                   </li>
                 </>
               )}

@@ -1,79 +1,85 @@
 // import { Link } from "gatsby"
-import React from "react"
-import logo from "../images/logo.svg"
+import React from "react";
+import prev from "../images/curso-prev.png";
 
-const Header = () => {
-
-  const [scrollPosition, setScrollPosition] = React.useState(0);
-
-  const [showMenu, setShowMenu] = React.useState(false);
-  const handleScroll = () => {
-      const position = window.pageYOffset;
-      setScrollPosition(position);
-    };
-
-  React.useEffect(() => {
-      window.addEventListener('scroll', handleScroll, { passive: true });
-
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
-  }, []);
-
+const BannerCursos = () => {
   return (
-    <>    
+    <>
       <div className="container">
         <div className="section-floating section-purple">
           <div className="row no-gutters">
             <div className="col-md-6">
-              <p className="text-light uppercase mb-0">PRÓXIMO TALLER</p>
-              {/* nombre de curso */}
-              <h1 className="mb-2 text-primary">
+              <p className="text-light uppercase mb-0 font-sm">
+                CURSO EN VIDEO - 130 MIN
+              </p>
+              <h1 className="mb-3 text-primary">
                 Pasos básicos para sobrevivir al SATanas
               </h1>
-              <ul>
-                <li>Martes 1 de junio 2021</li>
-                <li>7:00 pm a 9:00 pm (aprox)</li>
-                <li>A través de Zoom</li>
-              </ul>
-              <h3 className="mb-4">Costo: $350</h3>
-              <a target="_blank" href="https://taller-basico-para-sobrevivir-al-sat.boletia.com/" className="btn btn-primary btn-lg mb-3 btn-floating">
-                Reserva tu lugar
-              </a>
+              <img src={prev} className="img-fluid" />
             </div>
-            <hr className="my-3 mb-5 d-md-none" />
             <div className="col-md-6">
-              <div className="p-lg-2">
-                <h4 className="text-light text-primary">¿Qué aprenderé aqui?</h4>
-                <ul>
-                  <li>
-                    Todo lo que debes saber para incorporarte de forma correcta
-                    (y que te convenga) ante el SAT{" "}
-                  </li>
-                  <li>
-                    Primeros pasos que debes de tomar para comenzar la vida
-                    fiscal, las obligaciones y derechos de ésta, y muchos tips
-                    para hacerlo de la forma más sencilla
-                  </li>
-                </ul>
-                <hr />
-                <p class="text-light font-sm">
-                  * Este curso está recomendado para personas que acaban de
-                  salir de la carrera y no saben cómo darse de alta en el SAT,
-                  personas que siempre han sido asalariadxs pero que quieren
-                  aprender a sobrevivir ante el SATanas o quienes se acaban de
-                  incorporar y no saben cuál es el siguiente paso.{" "}
+            <p className="text-light text-primary">
+                <strong>¿Qué aprenderás aqui?</strong>
+              </p>
+              <ul className="mb-3">
+                <li className="text-light font-sm mb-1">
+                  Cómo incorporarte de forma correcta <i>(y que te convenga)</i>{" "}
+                  ante el SAT{" "}
+                </li>
+                <li className="text-light font-sm mb-1">
+                  Primeros pasos para la vida fiscal, cómo tus obligaciones y
+                  derechos
+                </li>
+                <li className="text-light font-sm mb-1">
+                  Super tips para llevar tu contabilidad de manera sencilla
+                </li>
+              </ul>
+              <p className="text-light text-primary">
+                <strong>Este curso es para ti si...</strong>
+              </p>
+              <ul className="mb-4">
+                <li class="font-sm mb-1">
+                  Acabas de salir de la carrera y no sabes como darte de alta
+                </li>
+                <li class="font-sm mb-1">
+                  Eres asalariadx pero quieres aprender a sobrevivir ante el
+                  SATanas
+                </li>
+                <li class="font-sm mb-1">
+                  Te acabas de incorporar y no sabes cuál es el siguiente paso
+                </li>
+              </ul>
+              <div className="mb-4">
+                <h4>Costo: <span className="text-primary">$199</span></h4>
+                <p className="font-xs text-light">
+                  (Pagas en linea y recibes acceso inmediato al video)
                 </p>
-                <p class="text-light font-sm">
-                  ¿Tienes un problema en específico? <a href="#asesoria" className="a-underline text-primary">Agenda una asesoria</a>
-                </p>
+              </div>
+              <div className="row align-items-center">
+                <div className="col-md-6">
+                  <a
+                    target="_blank"
+                    href="https://taller-basico-para-sobrevivir-al-sat.boletia.com/"
+                    className="btn btn-primary btn-lg mb-3 btn-floating btn-block"
+                  >
+                    Comprar curso
+                  </a>
+                </div>
+                <div className="col-md-6">
+                  <p class="text-light font-sm">
+                    ¿Tienes un problema o duda en específico?{" "}
+                    <a href="#asesorias" className="a-underline text-primary">
+                      Agenda una asesoria :)
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default BannerCursos;
