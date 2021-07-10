@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "La Hora Sat",
@@ -63,6 +67,14 @@ module.exports = {
           appId: "1:663330168036:web:0b29673eed121afc0420f1"
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Price"],
+        secretKey: process.env.GATSBY_STRIPE_SECRET_KEY,
+        downloadFiles: false,
+      },
+    },
   ],
 };

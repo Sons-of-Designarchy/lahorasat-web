@@ -1,6 +1,8 @@
 import * as React from "react";
+import Checkout from "../components/checkout";
 import Header from "../components/header";
 import Layout from "../components/layout";
+import Products from "../components/products/products";
 import RegisterForm from "../components/register-form";
 import Redes from "../images/redes.png";
 
@@ -9,6 +11,8 @@ const IndexPage = () => {
   return (
     <>
     <Layout>
+      <Products />
+      <Checkout />
       <div className="hero">
         <Header />
         <div className="section container">

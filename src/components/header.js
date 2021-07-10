@@ -6,7 +6,7 @@ import firebase from "gatsby-plugin-firebase"
 import { Link, navigate } from 'gatsby';
 
 const Header = () => {
-  const { user } = useContext(AuthContext)
+  const { user } = useContext(AuthContext);
 
   const handleLogout = async () => {
     console.log('here');

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Header from "../components/header";
 import Layout from "../components/layout";
-import LoginForm from "../components/login-form";
+import LoginForm from "../components/auth/login-form";
 
 // markup
 const IndexPage = () => {

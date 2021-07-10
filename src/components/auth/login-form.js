@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import firebase from "gatsby-plugin-firebase";
-import { AuthContext } from "../context/auth";
+import { AuthContext } from "../../context/auth";
 import { navigate } from 'gatsby';
 
 const LoginForm = () => {
@@ -10,7 +10,7 @@ const LoginForm = () => {
     error: null,
   });
 
-  const {setUser} = useContext(AuthContext);
+  const { setUser } = useContext(AuthContext);
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
