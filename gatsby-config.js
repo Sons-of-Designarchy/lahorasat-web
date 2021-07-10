@@ -76,5 +76,8 @@ module.exports = {
         downloadFiles: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-postcss`,
+    },
   ],
 };
