@@ -1,12 +1,13 @@
 import * as React from "react";
 import Header from "../components/header";
 import Layout from "../components/layout";
-
+import RegisterForm from "../components/register-form";
 import Redes from "../images/redes.png";
 
 // markup
 const IndexPage = () => {
   return (
+    <>
     <Layout>
       <div className="hero">
         <Header />
@@ -14,7 +15,7 @@ const IndexPage = () => {
           <div className="col-lg-10 mx-auto">
             <h1 className="hero-title text-center">
               Todo lo que necesitas saber sobre <span className="bg-primary">el SAT</span> y la{" "}
-              <span className="bg-primary">vida financiera</span> contado por{" "}
+              <span className="bg-primary">vida wfinanciera</span> contado por{" "}
               <span className="bg-primary">millennials para millennials</span> * 🤓💸
             </h1>
           </div>
@@ -64,7 +65,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      {/* <div className="section">
+        <div className="section">
         <h3 className="text-center">Nuestros servicios:</h3>
         <div className="container">
           <div className="row">
@@ -98,8 +99,9 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </Layout>
+    </>
   );
 };
 
