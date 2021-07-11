@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "La Hora Sat",
@@ -50,6 +54,30 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
+    },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: 'AIzaSyC568xrwsNKc0lPvGlfwUU76qrFdWoC8ng',
+          authDomain: "lhs-development-79240.firebaseapp.com",
+          projectId: "lhs-development-79240",
+          storageBucket: "lhs-development-79240.appspot.com",
+          messagingSenderId: "663330168036",
+          appId: "1:663330168036:web:0b29673eed121afc0420f1"
+        }
+      }
+    },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Price"],
+        secretKey: process.env.GATSBY_STRIPE_SECRET_KEY,
+        downloadFiles: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
     },
   ],
 };

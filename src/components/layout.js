@@ -1,7 +1,9 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Footer from "./footer"
+import Header from "./header"
 import "./layout.css"
+import Subscribe from "./subscribe"
 // import Subscribe from "./subscribe"
 
 export default function Layout({ children }) {
@@ -10,8 +12,11 @@ export default function Layout({ children }) {
       <Helmet>
         <title>La hora SAT® 🤓</title>
       </Helmet>
-      {children}
-      {/* <Subscribe /> */}
+      <Header />
+      <div className="page-content">
+        {children}
+      </div>
+      <Subscribe />
       <Footer />
     </main>
   )
