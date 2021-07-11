@@ -72,20 +72,20 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="https://lahorasat.podia.com"
-                >
-                  Webinars y Cursos
-                </a>
-              </li>
-              <li className="nav-item">
                 <a 
                   className="nav-link"
                   activeClassName="active"
                   href="#asesorias"
                 >
                   Asesorias
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="https://lahorasat.podia.com"
+                >
+                  Webinars y Cursos
                 </a>
               </li>
             </ul>
@@ -112,11 +112,11 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  {/* <li className="nav-item">
-                    <a href="/login" className="nav-link">
-                      Iniciar sesión
+                  <li className="nav-item">
+                    <a href="mailto:lahorasat@gmail.com" className="nav-link">
+                      Contáctanos
                     </a>
-                  </li> */}
+                  </li>
                 </>
               )}
             </ul>
