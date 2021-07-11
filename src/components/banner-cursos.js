@@ -18,7 +18,7 @@ const BannerCursos = () => {
               <img src={prev} className="img-fluid mb-4" />
             </div>
             <div className="col-md-6">
-            <p className="text-light text-primary">
+              <p className="text-light text-primary">
                 <strong>¿Qué aprenderás aqui?</strong>
               </p>
               <ul className="mb-3">
@@ -50,7 +50,9 @@ const BannerCursos = () => {
                 </li>
               </ul>
               <div className="mb-4">
-                <h4>Costo: <span className="text-primary">$199</span></h4>
+                <h4>
+                  Costo: <span className="text-primary">$199</span>
+                </h4>
                 <p className="font-xs text-light">
                   (Pagas en linea y recibes acceso inmediato al video)
                 </p>
@@ -59,7 +61,7 @@ const BannerCursos = () => {
                 <div className="col-md-6">
                   <a
                     target="_blank"
-                    href="https://taller-basico-para-sobrevivir-al-sat.boletia.com/"
+                    href="https://lahorasat.podia.com/curso-en-video"
                     className="btn btn-primary btn-lg mb-3 btn-floating btn-block"
                     style={{ width: "100%" }}
                   >

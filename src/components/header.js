@@ -67,30 +67,26 @@ const Header = () => {
           >
             <ul className="d-flex navbar-nav mr-auto">
               <li className="nav-item">
-                <a href="#asesorias" className="nav-link">
-                  Asesorias
+                <a href="/" className="nav-link">
+                  Inicio
                 </a>
               </li>
-              {/* <li className="nav-item">
-                <a href="#cursos">Cursos</a>
-              </li> */}
               <li className="nav-item">
-                <Link
+                <a
                   className="nav-link"
-                  activeClassName="active"
-                  to="/nosotros/"
+                  href="https://lahorasat.podia.com"
                 >
-                  Nosotros
-                </Link>
+                  Webinars y Cursos
+                </a>
               </li>
               <li className="nav-item">
-                <Link
+                <a 
                   className="nav-link"
                   activeClassName="active"
-                  to="/contacto/"
+                  href="#asesorias"
                 >
-                  Contacto
-                </Link>
+                  Asesorias
+                </a>
               </li>
             </ul>
             <div className="logo-container d-none d-lg-block">
@@ -116,11 +112,11 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a href="/login" className="nav-link">
                       Iniciar sesión
                     </a>
-                  </li>
+                  </li> */}
                 </>
               )}
             </ul>
