@@ -53,7 +53,7 @@ const RegisterForm = () => {
               onChange={handleChange}
               className="form-control"
             />
-            {data.error && <>{data.error}</>}
+            {data.error && <div className="alert alert-danger font-sm text-center my-4">{data.error}</div>}
           </div>
           <input type="submit" value="Enviar" className="btn btn-primary btn-lg w-100" />
           <p className="mt-3 text-center font-sm">

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import firebase from "gatsby-plugin-firebase";
 import { AuthContext } from "../../context/auth";
-import { navigate } from 'gatsby';
+import { navigate } from "gatsby";
 import SharedLinks from "./shared-links";
 
 const LoginForm = () => {
@@ -22,11 +22,11 @@ const LoginForm = () => {
     try {
       const result = await firebase
         .auth()
-        .signInWithEmailAndPassword(data.email, data.password)
-        setUser(result);
-        navigate("/")
+        .signInWithEmailAndPassword(data.email, data.password);
+      setUser(result);
+      navigate("/");
     } catch (err) {
-      setData({...data, error: err.message })
+      setData({ ...data, error: err.message });
     }
   };
 
@@ -36,7 +36,9 @@ const LoginForm = () => {
         <h5 className="text-center mb-4">Iniciar sesión</h5>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label" for="#email">Tu email</label>
+            <label className="form-label" for="#email">
+              Tu email
+            </label>
             <input
               type="text"
               name="email"
@@ -47,7 +49,9 @@ const LoginForm = () => {
             />
           </div>
           <div className="mb-3">
-            <label for="#password" className="form-label">Tu contraseña</label>
+            <label for="#password" className="form-label">
+              Tu contraseña
+            </label>
             <input
               type="password"
               name="password"
@@ -57,10 +61,17 @@ const LoginForm = () => {
               className="form-control"
             />
           </div>
-          {data.error && <>{data.error}</>}
-          <input type="submit" value="Enviar" className="btn btn-primary btn-lg w-100" />
+          {data.error && <div className="alert alert-danger font-sm text-center my-4">{data.error}</div>}
+          <input
+            type="submit"
+            value="Enviar"
+            className="btn btn-primary btn-lg w-100"
+          />
           <p className="mt-3 text-center font-sm">
-            Aún no tienes cuenta? <a href="/registro" className="text-underline">Registrate</a>
+            Aún no tienes cuenta?{" "}
+            <a href="/registro" className="text-underline">
+              Registrate
+            </a>
           </p>
         </form>
         <SharedLinks />
@@ -69,4 +80,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm
+export default LoginForm;

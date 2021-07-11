@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="section section-purple text-center">
       <div className="mb-3">
-        <img alt="La Hora Sat" width="100" src={logo} />
+        <img alt="La Hora Sat" width="100" src={logo} style={{ display: "inline-block" }} />
       </div>
       <div className="d-flex mb-3 justify-content-center">
         <a target="_blank" className="footer-social-link" href="https://www.instagram.com/lahorasat/"><img src={Instagram} /></a>
