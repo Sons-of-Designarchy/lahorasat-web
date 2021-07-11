@@ -15,7 +15,7 @@ const Footer = () => {
         />
       </div>
       <div className="my-3">
-        Contacto: <br />
+        Contáctanos: <br />
         <a href="mailto:lahorasat@gmail.com" className="text-light">lahorasat@gmail.com</a>
       </div>
       <div className="d-flex mb-3 justify-content-center">
