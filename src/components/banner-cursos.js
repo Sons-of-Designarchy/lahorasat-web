@@ -51,7 +51,7 @@ const BannerCursos = () => {
               </ul>
               <div className="mb-4">
                 <h4>
-                  Costo: <span className="text-primary">$199</span>
+                  Costo: <span className="text-primary">$299</span>
                 </h4>
                 <p className="font-xs text-light">
                   (Pagas en linea y recibes acceso inmediato al video)
