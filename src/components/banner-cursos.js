@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React from "react";
-import prev from "../images/curso-prev.png";
+import prev from "../images/curso-video.png";
 
 const BannerCursos = () => {
   return (
@@ -10,12 +10,12 @@ const BannerCursos = () => {
           <div className="row no-gutters">
             <div className="col-md-6">
               <p className="text-light uppercase mb-0 font-sm">
-                CURSO EN VIDEO - 130 MIN
+                CURSO EN VIDEO
               </p>
               <h1 className="mb-3 text-primary">
                 Pasos básicos para sobrevivir al SATanas
               </h1>
-              <img src={prev} className="img-fluid mb-4" />
+              <img src={prev} className="img-fluid mb-4" style={{ borderRadius: 24, width: "80%" }} />
             </div>
             <div className="col-md-6">
               <p className="text-light text-primary">
