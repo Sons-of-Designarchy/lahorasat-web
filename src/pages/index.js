@@ -100,10 +100,10 @@ const IndexPage = () => {
               </div>
               <div className="col-lg-auto">
                 <a
-                  href="mailto:lahorasat@gmail.com"
+                  href="https://wa.me/+525510722129"
                   className="mt-3 mr-1 btn btn-lg btn-outline-secondary"
                 >
-                  o contáctanos por correo
+                  o Agenda por Whatsapp
                 </a>
               </div>
             </div>
