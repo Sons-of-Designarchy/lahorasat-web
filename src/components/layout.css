@@ -163,8 +163,8 @@ ul {
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active {
-  color: var(--purple);
-  background: var(--green);
+  color: var(--purple) !important;
+  background: var(--green) !important;
 }
 
 .btn-secondary,
@@ -347,6 +347,13 @@ ul {
   overflow: hidden;
   cursor: pointer;
   transition: all ease-in 0.15s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.course-content {
+  flex: 1;
+  padding: 1rem 1rem 0rem;
 }
 
 .course-card:hover {
@@ -382,6 +389,10 @@ ul {
   width: 100%;
   height: 100%;
   overflow: auto;
+  display: none;
+}
+.section-modal.open {
+  display: block;
 }
 
 .section-modal-backdrop {
@@ -417,5 +428,6 @@ ul {
 
 .section-modal-content > div {
   padding: 1rem;  
+  min-height: 100%;
 }
 

@@ -7,13 +7,11 @@ const BannerCursos = () => {
     <div className="section-purple">
       <div className="row no-gutters">
         <div className="col-md-6">
-          <p className="text-light uppercase mb-0 font-sm">
-            CURSO EN VIDEO
-          </p>
+          <p className="text-light uppercase mb-0 font-sm">CURSO EN VIDEO</p>
           <h1 className="mb-3 text-primary">
             Pasos básicos para sobrevivir al SATanas
           </h1>
-          <img src={prev} className="img-fluid mb-4" style={{ borderRadius: 24, width: "80%" }} />
+          <img src={prev} className="img-fluid mb-4 d-none d-md-block" style={{ borderRadius: 24, width: "80%" }} />
         </div>
         <div className="col-md-6">
           <p className="text-light text-primary">
@@ -40,8 +38,7 @@ const BannerCursos = () => {
               Acabas de salir de la carrera y no sabes como darte de alta
             </li>
             <li class="font-sm mb-1">
-              Eres asalariadx pero quieres aprender a sobrevivir ante el
-              SATanas
+              Eres asalariadx pero quieres aprender a sobrevivir ante el SATanas
             </li>
             <li class="font-sm mb-1">
               Te acabas de incorporar y no sabes cuál es el siguiente paso
@@ -58,10 +55,10 @@ const BannerCursos = () => {
           <div className="row align-items-center">
             <div className="col-md-6">
               <a
-                target="_blank"
-                href="https://lahorasat.podia.com/curso-en-video"
                 className="btn btn-primary btn-lg mb-3 btn-floating btn-block"
                 style={{ width: "100%" }}
+                href="https://lahorasat.podia.com/curso-en-video"
+                data-podia-embed="link"
               >
                 Comprar curso
               </a>

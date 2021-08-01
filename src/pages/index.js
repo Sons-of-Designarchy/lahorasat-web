@@ -1,10 +1,8 @@
 import * as React from "react";
-import BannerCursos from "../components/banner-cursos";
-import Checkout from "../components/checkout";
 import Cursos from "../components/cursos";
 import Layout from "../components/layout";
-import RegisterForm from "../components/register-form";
 import Redes from "../images/redes.png";
+import Subscribe from "../components/subscribe";
 
 // markup
 const IndexPage = () => {
@@ -44,7 +42,9 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <Cursos />
+        <div id="cursos">
+          <Cursos />
+        </div>
         <div id="asesorias" className="container mb-5">
           <div className="mt-5 section-floating section-green text-center">
             <p className="mb-2">¿Tienes dudas en específico?</p>
@@ -108,6 +108,7 @@ const IndexPage = () => {
                 <span className="bg-primary">millennials para millennials</span>{" "}
                 * 🤓💸
               </h1>
+              <Subscribe />
             </div>
           </div>
         </div>
