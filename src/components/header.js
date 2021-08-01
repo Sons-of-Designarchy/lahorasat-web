@@ -72,20 +72,20 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#cursos"
+                >
+                  Cursos y talleres
+                </a>
+              </li>
+              <li className="nav-item">
                 <a 
                   className="nav-link"
                   activeClassName="active"
                   href="#asesorias"
                 >
                   Asesorias
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="https://lahorasat.podia.com"
-                >
-                  Webinars y Cursos
                 </a>
               </li>
             </ul>
