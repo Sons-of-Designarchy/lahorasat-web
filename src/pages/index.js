@@ -3,6 +3,7 @@ import Cursos from "../components/cursos";
 import Layout from "../components/layout";
 import Redes from "../images/redes.png";
 import Subscribe from "../components/subscribe";
+import Asesorias from "../components/asesorias";
 
 // markup
 const IndexPage = () => {
@@ -45,7 +46,11 @@ const IndexPage = () => {
         <div id="cursos">
           <Cursos />
         </div>
+        {/* <div id="asesorias">
+          <Asesorias />
+        </div> */}
         <div id="asesorias" className="container mb-5">
+
           <div className="mt-5 section-floating section-green text-center">
             <p className="mb-2">¿Tienes dudas en específico?</p>
             <h1 className="text-center mb-3">

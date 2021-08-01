@@ -5,19 +5,19 @@ import taller from "../images/cursos/taller-hacks-cover.png";
 import BannerCursos from "./banner-cursos";
 import BannerTaller from "./banner-taller";
 
-const Cursos = () => {
+const Asesorias = () => {
   const [openModal, setOpenModal] = React.useState("");
 
   return (
     <>
-      <div className="section section-purple">
+      <div className="section section-green">
         <div className="container">
-          <h3 className="text-center text-primary">
-            Nuestros cursos y talleres
+          <h3 className="text-center text-secondary">
+            ¿Necesitas asesoría personalizada? 
           </h3>
-          <p className="text-light text-center mb-5">
-          Aquí están las respuestas del universo. Si tienes dudas de qué curso elegir, <a href="https://wa.me/+525510722129" className="text-primary">mándanos un whats </a> 
-😉
+          <p className="text-secondary text-center mb-5">
+            Cursos en video y tallers en zoom para fkeofkeofeofeofefok
+            Tenemos dos modelos, si tienes dudas de cuál elegir, mándanos un whats.
           </p>
           <div className="row no-gutters">
             <div className="col-lg-1"></div>
@@ -121,4 +121,4 @@ const Cursos = () => {
   );
 };
 
-export default Cursos;
+export default Asesorias;

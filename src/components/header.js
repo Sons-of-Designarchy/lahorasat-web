@@ -12,6 +12,7 @@ const headerStyles = {
   position: "fixed",
   top: 0,
   width: "100%",
+  zIndex: 1000000,
 };
 
 const Header = () => {
