@@ -8,12 +8,9 @@ const btnStyle = {
 
 const Subscribe = () => {
   return (
-    <div className="section text-center">
+    <div className="section text-center pt-3">
       <div className="container">
-        <h3 className="mb-2">
-          Enterate de todos nuestros eventos y nuevos contenidos
-        </h3>
-        <p className="font-sm">
+        <p>
           Suscríbete a nuestro boletín y recibe un <span>10% de descuento</span>{" "}
           en tu primer curso o asesoria
         </p>
