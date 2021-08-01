@@ -1,6 +1,7 @@
 import * as React from "react";
 import BannerCursos from "../components/banner-cursos";
 import Checkout from "../components/checkout";
+import Cursos from "../components/cursos";
 import Layout from "../components/layout";
 import RegisterForm from "../components/register-form";
 import Redes from "../images/redes.png";
@@ -10,25 +11,11 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        <div className="hero">
-          <div className="section container">
-            <div className="col-lg-10 mx-auto">
-              <h1 className="hero-title text-center">
-                Todo lo que necesitas saber sobre{" "}
-                <span className="bg-primary">el SAT</span> y la{" "}
-                <span className="bg-primary">vida financiera</span> contado por{" "}
-                <span className="bg-primary">millennials para millennials</span>{" "}
-                * 🤓💸
-              </h1>
-            </div>
-          </div>
-        </div>
-        <BannerCursos />
-        <div className="section">
+      <div className="section">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6">
-                <h2>Somos una comunidad de educación fiscal</h2>
+                <h1 className="mb-4">Somos una comunidad de educación fiscal</h1>
                 <p className="font-lg">
                   Hacemos contenido informativo, impartimos{" "}
                   <a
@@ -57,6 +44,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+        <Cursos />
         <div id="asesorias" className="container mb-5">
           <div className="mt-5 section-floating section-green text-center">
             <p className="mb-2">¿Tienes dudas en específico?</p>
@@ -106,6 +94,20 @@ const IndexPage = () => {
                   o Agenda por Whatsapp
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero">
+          <div className="section container">
+            <div className="col-lg-10 mx-auto">
+              <h1 className="hero-title text-center">
+                Todo lo que necesitas saber sobre{" "}
+                <span className="bg-primary">el SAT</span> y la{" "}
+                <span className="bg-primary">vida financiera</span> contado por{" "}
+                <span className="bg-primary">millennials para millennials</span>{" "}
+                * 🤓💸
+              </h1>
             </div>
           </div>
         </div>

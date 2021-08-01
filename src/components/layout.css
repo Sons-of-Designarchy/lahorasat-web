@@ -1,5 +1,6 @@
 :root {
   --purple: #603DBD;
+  --purple-light: #886ECD;
   --green: #D5FC6D;
   --white: #ffffff;
 }
@@ -111,6 +112,14 @@ h6 {
   color: var(--green) !important;
 }
 
+.text-secondary {
+  color: var(--purple) !important;
+}
+
+.text-secondary-l {
+  color: var(--purple-light) !important;
+}
+
 .font-xs {
   font-size: 0.7rem;
 }
@@ -142,8 +151,13 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 0 !important;
-  padding: 0 1.5rem;
+  border: 0!important;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-block {
+  width: 100%;
 }
 
 .btn-primary,
@@ -228,6 +242,10 @@ ul {
 
 .section-lg {
   padding: 7rem 0;
+}
+
+.text-dark {
+  color: #000!important;
 }
 
 @media (max-width: 556px) {
@@ -320,5 +338,84 @@ ul {
   margin: 1rem;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all ease-in 0.15s;
+}
+
+.course-card:hover {
+  transform: translate(0, -5px);
+}
+
+.course-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.label {
+  padding: 0.25rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  border-radius: 16px;
+}
+
+.label-primary {
+  background: var(--green);
+  color: var(--purple);
+}
+
+.section-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.section-modal-backdrop {
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.section-modal-close {
+  background: var(--green);
+  color: var(--purple);
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-modal-content {
+  position: absolute;
+  left: 5vw;
+  top: 5vw;
+  bottom: 5vw;
+  right: 5vw;
+  box-shadow: 0 5px 10px rgba(0,0,0, 0.25);
+}
+
+.section-modal-content > div {
+  padding: 1rem;  
 }
 
