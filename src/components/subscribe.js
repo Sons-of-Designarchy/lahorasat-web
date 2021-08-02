@@ -12,7 +12,7 @@ const Subscribe = () => {
       <div className="container">
         <p>
           Suscríbete a nuestro boletín y recibe un <span>10% de descuento</span>{" "}
-          en tu primer curso o asesoria
+          en tu primer curso
         </p>
         <div className="mt-3 mb-5 mx-auto" style={{ maxWidth: 500 }}>
           <form
@@ -30,7 +30,7 @@ const Subscribe = () => {
             />
             <input
               type="submit"
-              value="Suscribirme!"
+              value="Suscribirme"
               className="btn btn-primary"
               style={btnStyle}
             />
