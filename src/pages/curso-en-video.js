@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import Cursos from "../components/cursos";
 import BannerCursos from "../components/banner-cursos";
+import Asesorias from "../components/asesorias";
 
 // markup
 const CursoEnVideoPage = () => {
@@ -13,6 +13,7 @@ const CursoEnVideoPage = () => {
             <BannerCursos />
           </div>
         </div>
+        <Asesorias />
       </Layout>
     </>
   );
