@@ -16,7 +16,7 @@ const Cursos = () => {
             Nuestros cursos y talleres
           </h3>
           <p className="text-light text-center mb-5">
-          Aquí están las respuestas del universo. Si tienes dudas de qué curso elegir, <a href="https://wa.me/+525510722129" className="text-primary">mándanos un whats </a> 
+          Aquí están las respuestas del universo. Si tienes dudas de qué curso elegir, <a href="https://wa.me/+525510722129" className="text-primary">mándanos un Whatsapp </a> 
 😉
           </p>
           <div className="row no-gutters">

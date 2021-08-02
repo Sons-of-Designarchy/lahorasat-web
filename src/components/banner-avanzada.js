@@ -55,7 +55,7 @@ const BannerAvanzada = () => {
               (Pagas en linea y recibes acceso al calendario para agendar la fecha y hora que gustes)
             </p>
           </div>
-          <div className="d-flex">
+          <div className="d-flex flex-column flex-md-row">
             <a
               className="btn btn-primary btn-lg mb-3 mr-3"
               style={{ width: "100%" }}
@@ -70,7 +70,7 @@ const BannerAvanzada = () => {
               target="_blank"
               href="https://wa.me/+525510722129"
             >
-              Agendar por whats
+              Agendar por Whatsapp
             </a>
           </div>
           <div className="d-lg-none">

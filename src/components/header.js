@@ -119,7 +119,7 @@ const Header = ({ homepage }) => {
                       className="btn btn-menu"
                       target="_blank"
                     >
-                      Contáctanos por Whats
+                      Contáctanos por Whatsapp
                     </a>
                   </li>
                 </>

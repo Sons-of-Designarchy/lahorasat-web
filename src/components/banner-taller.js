@@ -61,7 +61,7 @@ const BannerTaller = ({showImage}) => {
               Costo: <span className="text-primary">$790</span>
             </h4>
           </div>
-          <div className="d-flex">
+          <div className="d-flex flex-column flex-md-row">
             <a
               className="btn btn-primary btn-lg mb-3 mr-3"
               style={{ width: "100%" }}
@@ -76,7 +76,7 @@ const BannerTaller = ({showImage}) => {
               target="_blank"
               href="https://wa.me/+525510722129"
             >
-              Agendar por whats
+              Agendar por Whatsapp
             </a>
           </div>
         </div>
