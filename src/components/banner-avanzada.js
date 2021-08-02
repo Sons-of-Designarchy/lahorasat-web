@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React from "react";
-import prev from "../images/cursos/asesoria-practica.png";
+import prev from "../images/cursos/asesoria-practica.jpg";
 
 const BannerAvanzada = () => {
   return (
@@ -9,7 +9,7 @@ const BannerAvanzada = () => {
         <div className="col-md-6">
           <p className="text-light uppercase mb-0 font-sm">80 MINS VIA ZOOM</p>
           <h1 className="mb-3 text-primary">
-          Asesoría avanzada
+          Asesoría Practica para Personas Físicas
           </h1>
           <img src={prev} className="img-fluid mb-4 d-none d-md-block" style={{ borderRadius: 24, width: "80%" }} />
         </div>

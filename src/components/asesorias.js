@@ -3,7 +3,7 @@ import React from "react";
 import BannerAvanzada from "./banner-avanzada";
 import BannerBasica from "./banner-basica";
 import basica from "../images/cursos/asesoria.png";
-import practica from "../images/cursos/asesoria-practica.png";
+import practica from "../images/cursos/asesoria-practica-2.jpg";
 
 const Asesorias = () => {
   const [openModal, setOpenModal] = React.useState("");
@@ -25,6 +25,7 @@ const Asesorias = () => {
                 className="course-card rounded"
                 onClick={() => setOpenModal("basica")}
               >
+                <img src={basica} className="img-fluid" />
                 <div className="course-content">
                   <div className="d-flex mb-2">
                     <div className="label label-primary mr-2">
@@ -52,6 +53,7 @@ const Asesorias = () => {
                 className="course-card rounded"
                 onClick={() => setOpenModal("practica")}
               >
+                <img src={practica} className="img-fluid" />
                 <div className="course-content">
                   <div className="d-flex mb-2">
                     <div className="label label-primary mr-2">
@@ -63,11 +65,10 @@ const Asesorias = () => {
                     <div className="label label-primary">$950 MXN</div>
                   </div>
                   <h2 className="mb-1 text-secondary">
-                    Asesoría práctica <span className="font-sm">(para personas fisicas)</span>
+                    Asesoría práctica <span className="font-lg d-block">(para personas fisicas)</span>
                   </h2>
                   <p className="font-sm text-secondary-l">
-                    Aprende cómo incorporarte ante el SAT, primeros pasos para
-                    la vida fiscal y super tips para llevar tu contabilidad.
+                    Te ayudamos de forma práctica en las operaciones más comunes del portal y resolvemos las dudas que no te dejan dormir. 
                   </p>
                 </div>
                 <div className="p-3">
