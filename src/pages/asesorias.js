@@ -1,39 +1,14 @@
-import autoprefixer from "autoprefixer";
 import * as React from "react";
-import BannerCursos from "../components/banner-cursos";
-import Checkout from "../components/checkout";
+import Asesorias from "../components/asesorias";
 import Layout from "../components/layout";
-import RegisterForm from "../components/register-form";
-import Redes from "../images/redes.png";
 
 // markup
 const AsesoriasPage = () => {
   return (
     <>
-      <div className="fondo-blanco">
-        <div className="container">
-          menu
-          banner
-          para que sirve
-        </div>
-      </div>
-      <div className="fondo-gris" style={{ marginTop: "200px"}}>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <img src="http://placekitten.com/400/500" />
-              test
-            </div>
-            <div className="col-lg-6">
-              <p></p>derecha izqfkefokeofekfok
-            </div>
-          </div>
-        </div>
-      </div>
-
-
       <Layout>
-        <div className="section section-purple section-big">
+        <Asesorias />
+        {/* <div className="section section-purple section-big">
           <div className="container">
             <div className="row">
               <div className="col-lg-8 mx-auto text-center">
@@ -119,7 +94,7 @@ const AsesoriasPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Layout>
     </>
   );

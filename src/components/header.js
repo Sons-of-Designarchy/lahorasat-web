@@ -15,7 +15,7 @@ const headerStyles = {
   zIndex: 1000000,
 };
 
-const Header = () => {
+const Header = ({ homepage }) => {
   const { user } = useContext(AuthContext);
 
   const handleLogout = async () => {
@@ -75,7 +75,7 @@ const Header = () => {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="#cursos"
+                  href={homepage ? '#cursos' : "/cursos"}
                 >
                   Cursos y talleres
                 </a>
@@ -84,7 +84,7 @@ const Header = () => {
                 <a 
                   className="nav-link"
                   activeClassName="active"
-                  href="#asesorias"
+                  href={homepage ? '#asesorias' : "/asesorias"}
                 >
                   Asesorias
                 </a>
@@ -114,8 +114,11 @@ const Header = () => {
               ) : (
                 <>
                   <li className="nav-item">
-                    <a href="mailto:lahorasat@gmail.com" className="btn btn-menu">
-
+                    <a 
+                      href="https://wa.me/+525510722129"
+                      className="btn btn-menu"
+                      target="_blank"
+                    >
                       Contáctanos por Whats
                     </a>
                   </li>

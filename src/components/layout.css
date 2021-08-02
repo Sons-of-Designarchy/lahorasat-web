@@ -196,10 +196,12 @@ ul {
 }
 
 .btn-menu {
-  height: 32px;
-  border-radius: 32px;
-  color: var(--purple);
-  border: 1px solid var(--green);
+  height: 44px;
+  border-radius: 44px;
+  color: var(--purple)!important;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--purple)!important;
 }
 
 /* Navigation */

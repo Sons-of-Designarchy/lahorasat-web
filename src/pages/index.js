@@ -9,7 +9,7 @@ import Asesorias from "../components/asesorias";
 const IndexPage = () => {
   return (
     <>
-      <Layout>
+      <Layout homepage>
       <div className="section">
           <div className="container">
             <div className="row align-items-center">
@@ -48,21 +48,6 @@ const IndexPage = () => {
         </div>
         <div id="asesorias">
           <Asesorias />
-        </div>
-
-        <div className="hero">
-          <div className="section container">
-            <div className="col-lg-10 mx-auto">
-              <h1 className="hero-title text-center">
-                Todo lo que necesitas saber sobre{" "}
-                <span className="bg-primary">el SAT</span> y la{" "}
-                <span className="bg-primary">vida financiera</span> contado por{" "}
-                <span className="bg-primary">millennials para millennials</span>{" "}
-                * 🤓💸
-              </h1>
-              <Subscribe />
-            </div>
-          </div>
         </div>
       </Layout>
     </>
