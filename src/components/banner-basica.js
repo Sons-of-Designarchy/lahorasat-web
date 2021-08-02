@@ -12,6 +12,16 @@ const BannerCursos = () => {
           Asesoría básica  
           </h1>
           <img src={prev} className="img-fluid mb-4 d-none d-md-block" style={{ borderRadius: 24, width: "80%" }} />
+          <div className="d-none d-lg-block">
+            <p className="text-light text-primary font-xs">
+              <strong>Políticas de Cancelación.</strong>
+            </p>
+            <ul className="mb-3">
+              <li className="font-xs">Puedes reagendar sin costo extra avisando mínimo 24 hrs antes de tu sesión.</li>
+              <li className="font-xs">Puedes reagendar con 8 hrs de anticipación por un cargo de 35% del costo de la asesoría. </li>
+              <li className="font-xs">Para solicitar reembolsos contáctanos en whatsapp. </li>
+            </ul>
+          </div>
         </div>
         <div className="col-md-6">
           <p className="text-light text-primary">
@@ -59,6 +69,16 @@ const BannerCursos = () => {
             >
               Agendar por whats
             </a>
+          </div>
+          <div className="d-lg-none">
+            <p className="text-light text-primary font-xs">
+              <strong>Políticas de Cancelación.</strong>
+            </p>
+            <ul className="mb-3">
+              <li className="font-xs">Puedes reagendar sin costo extra avisando mínimo 24 hrs antes de tu sesión.</li>
+              <li className="font-xs">Puedes reagendar con 8 hrs de anticipación por un cargo de 35% del costo de la asesoría. </li>
+              <li className="font-xs">Para solicitar reembolsos contáctanos en whatsapp. </li>
+            </ul>
           </div>
         </div>
       </div>
