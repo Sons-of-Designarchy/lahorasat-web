@@ -4,8 +4,8 @@ import prev from "../images/curso-video.png";
 
 const BannerCursos = () => {
   return (
-    <div className="section-purple">
-      <div className="row no-gutters">
+    <>
+      <div className="row no-gutters align-items-center">
         <div className="col-md-6">
           <p className="text-light uppercase mb-0 font-sm">CURSO EN VIDEO</p>
           <h1 className="mb-3 text-primary">
@@ -72,7 +72,7 @@ const BannerCursos = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

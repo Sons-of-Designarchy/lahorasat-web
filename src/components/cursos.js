@@ -95,7 +95,9 @@ const Cursos = () => {
           >
             X
           </button>
-          <BannerCursos />
+          <div className="section-purple">
+            <BannerCursos />
+          </div>
         </div>
       </div>
       <div
