@@ -12,7 +12,7 @@ const BannerTaller = ({showImage}) => {
           Taller práctico sobre el SAT
           </h2>
           {showImage && (
-            <img src={prev} className="img-fluid mb-4 d-none d-md-block" style={{ borderRadius: 24, width: "80%" }} />
+            <img src={prev} className="img-fluid mb-4" style={{ borderRadius: 24, width: "80%" }} />
           )}
           <p className="text-light text-primary">
             <strong>Temario</strong>
