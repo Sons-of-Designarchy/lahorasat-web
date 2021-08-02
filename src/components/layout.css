@@ -195,6 +195,13 @@ ul {
   border-radius: 40px;
 }
 
+.btn-menu {
+  height: 32px;
+  border-radius: 32px;
+  color: var(--purple);
+  border: 1px solid var(--green);
+}
+
 /* Navigation */
 
 .navbar-nav {

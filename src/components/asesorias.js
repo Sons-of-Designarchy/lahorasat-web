@@ -16,7 +16,7 @@ const Asesorias = () => {
             ¿Necesitas asesoría personalizada? 
           </h3>
           <p className="text-secondary text-center mb-5">
-            Tenemos dos modelos, si tienes dudas de cuál elegir, <a href="https://wa.me/+525510722129" className="text-secondary text-underline">mándanos un whats</a>.
+            Tenemos dos modelos, si tienes dudas de cual elegir, <a href="https://wa.me/+525510722129" className="text-secondary text-underline">mándanos un whats</a>.
           </p>
           <div className="row no-gutters">
             <div className="col-lg-1"></div>

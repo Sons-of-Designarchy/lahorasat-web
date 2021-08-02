@@ -46,7 +46,7 @@ const BannerCursos = () => {
                   SATanas
                 </li>
                 <li class="font-sm mb-1">
-                  Te acabas de incorporar y no sabes cuál es el siguiente paso
+                  Te acabas de incorporar y no sabes cual es el siguiente paso
                 </li>
               </ul>
               <div className="mb-4">

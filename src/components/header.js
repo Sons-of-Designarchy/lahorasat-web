@@ -114,8 +114,9 @@ const Header = () => {
               ) : (
                 <>
                   <li className="nav-item">
-                    <a href="mailto:lahorasat@gmail.com" className="nav-link">
-                      Contáctanos
+                    <a href="mailto:lahorasat@gmail.com" className="btn btn-menu">
+
+                      Contáctanos por Whats
                     </a>
                   </li>
                 </>
