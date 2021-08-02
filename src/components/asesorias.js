@@ -96,7 +96,9 @@ const Asesorias = () => {
           >
             X
           </button>
-          <BannerBasica />
+          <div className="section-purple">
+            <BannerBasica />
+          </div>
         </div>
       </div>
       <div
@@ -115,7 +117,9 @@ const Asesorias = () => {
           >
             X
           </button>
-          <BannerAvanzada />
+          <div className="section-purple">
+            <BannerAvanzada />
+          </div>
         </div>
       </div>
     </>

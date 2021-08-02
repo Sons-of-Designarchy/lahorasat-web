@@ -116,7 +116,9 @@ const Cursos = () => {
           >
             X
           </button>
-          <BannerTaller />
+          <div className="section-purple">
+            <BannerTaller />
+          </div>
         </div>
       </div>
     </>

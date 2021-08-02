@@ -2,15 +2,18 @@
 import React from "react";
 import prev from "../images/cursos/taller-hacks-cover.png";
 
-const BannerTaller = () => {
+const BannerTaller = ({showImage}) => {
   return (
-    <div className="section-purple">
+    <>
       <div className="row no-gutters">
         <div className="col-md-6">
           <p className="text-light uppercase mb-0 font-sm">TALLER EN ZOOM - 7 de agosto - 10am</p>
           <h2 className="mb-2 text-primary">
           Taller práctico sobre el SAT
           </h2>
+          {showImage && (
+            <img src={prev} className="img-fluid mb-4 d-none d-md-block" style={{ borderRadius: 24, width: "80%" }} />
+          )}
           <p className="text-light text-primary">
             <strong>Temario</strong>
           </p>
@@ -78,7 +81,7 @@ const BannerTaller = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

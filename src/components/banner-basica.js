@@ -4,7 +4,7 @@ import prev from "../images/cursos/asesoria.png";
 
 const BannerCursos = () => {
   return (
-    <div className="section-purple">
+    <>
       <div className="row no-gutters">
         <div className="col-md-6">
           <p className="text-light uppercase mb-0 font-sm">1 HORA VIA ZOOM</p>
@@ -82,7 +82,7 @@ const BannerCursos = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
