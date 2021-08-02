@@ -66,7 +66,7 @@ const BannerTaller = () => {
                 href="https://lahorasat.podia.com/hacks-del-sat-para-freelancers"
                 data-podia-embed="link"
               >
-                Comprar curso
+                Comprar acceso
               </a>
             </div>
           </div>

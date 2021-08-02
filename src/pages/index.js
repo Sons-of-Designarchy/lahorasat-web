@@ -46,61 +46,8 @@ const IndexPage = () => {
         <div id="cursos">
           <Cursos />
         </div>
-        {/* <div id="asesorias">
+        <div id="asesorias">
           <Asesorias />
-        </div> */}
-        <div id="asesorias" className="container mb-5">
-
-          <div className="mt-5 section-floating section-green text-center">
-            <p className="mb-2">¿Tienes dudas en específico?</p>
-            <h1 className="text-center mb-3">
-              Agenda una asesoria personalizada
-            </h1>
-            <div className="mb-3">
-              <b>¿Cómo funciona?</b>
-            </div>
-            <ul>
-              <li>Cuéntanos el problema o duda que quieres resolver </li>
-              <li>
-                Te daremos el costo por la asesoría, duración y las fechas
-                disponibles{" "}
-              </li>
-              <li>
-                Te mandaremos los datos bancarios para que hagas el pago en max
-                24hrs <br />
-                <span className="font-sm">
-                  (nos tienes que mandar tu comprobante)
-                </span>
-              </li>
-              <li>
-                ¡Listo, tu asesoría quedará agendada! <br />
-                <span className="font-sm">
-                  {" "}
-                  (Te enviaremos un link para unirte a un Zoom en el día y hora
-                  de tu evento)
-                </span>
-              </li>
-            </ul>
-            <div className="row justify-content-center">
-              <div className="col-lg-auto">
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/lahorasat/"
-                  className="mt-3 mr-1 btn btn-lg btn-secondary"
-                >
-                  Agenda vía Instagram
-                </a>
-              </div>
-              <div className="col-lg-auto">
-                <a
-                  href="https://wa.me/+525510722129"
-                  className="mt-3 mr-1 btn btn-lg btn-outline-secondary"
-                >
-                  o Agenda por Whatsapp
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="hero">

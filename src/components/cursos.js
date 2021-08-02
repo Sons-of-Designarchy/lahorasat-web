@@ -37,7 +37,7 @@ const Cursos = () => {
                   <h4 className="mb-1 text-secondary">
                     Pasos básicos para sobrevivir al SATanas
                   </h4>
-                  <p className="font-sm text-secondary-l mb-3">
+                  <p className="font-sm text-secondary-l">
                     Aprende cómo incorporarte ante el SAT, primeros pasos para
                     la vida fiscal y super tips para llevar tu contabilidad.
                   </p>
@@ -66,8 +66,8 @@ const Cursos = () => {
                   <h4 className="mb-1 text-secondary">
                     Taller práctico sobre el SAT
                   </h4>
-                  <p className="font-sm text-secondary-l mb-3">
-                    ¿Tus clientes te piden factura y no tienes ni idea de cómo sacarla? Entonces este taller es para ti 😉
+                  <p className="font-sm text-secondary-l">
+                    Aprenderás a navegar en el portal, emitir facturas y hacer tus declaraciones. 
                   </p>
                 </div>
                 <div className="p-3">

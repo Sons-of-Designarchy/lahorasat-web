@@ -1,9 +1,9 @@
 // import { Link } from "gatsby"
 import React from "react";
-import curso from "../images/cursos/curso-video-cover.png";
-import taller from "../images/cursos/taller-hacks-cover.png";
-import BannerCursos from "./banner-cursos";
-import BannerTaller from "./banner-taller";
+import BannerAvanzada from "./banner-avanzada";
+import BannerBasica from "./banner-basica";
+import basica from "../images/cursos/asesoria.png";
+import practica from "../images/cursos/asesoria-practica.png";
 
 const Asesorias = () => {
   const [openModal, setOpenModal] = React.useState("");
@@ -16,30 +16,30 @@ const Asesorias = () => {
             ¿Necesitas asesoría personalizada? 
           </h3>
           <p className="text-secondary text-center mb-5">
-            Cursos en video y tallers en zoom para fkeofkeofeofeofefok
-            Tenemos dos modelos, si tienes dudas de cuál elegir, mándanos un whats.
+            Tenemos dos modelos, si tienes dudas de cuál elegir, <a href="https://wa.me/+525510722129" className="text-secondary text-underline">mándanos un whats</a>.
           </p>
           <div className="row no-gutters">
             <div className="col-lg-1"></div>
             <div className="col-lg-5 mb-3">
               <div
                 className="course-card rounded"
-                onClick={() => setOpenModal("video")}
+                onClick={() => setOpenModal("basica")}
               >
-                <img src={curso} className="img-fluid" />
                 <div className="course-content">
                   <div className="d-flex mb-2">
                     <div className="label label-primary mr-2">
-                      CURSO EN VIDEO
+                      1 HORA
                     </div>
-                    <div className="label label-primary">$299 MXN</div>
+                    <div className="label label-primary mr-2">
+                      VIA ZOOM
+                    </div>
+                    <div className="label label-primary">$650 MXN</div>
                   </div>
-                  <h4 className="mb-1 text-secondary">
-                    Pasos básicos para sobrevivir al SATanas
-                  </h4>
-                  <p className="font-sm text-secondary-l mb-3">
-                    Aprende cómo incorporarte ante el SAT, primeros pasos para
-                    la vida fiscal y super tips para llevar tu contabilidad.
+                  <h2 className="mb-1 text-secondary">
+                    Asesoría básica
+                  </h2>
+                  <p className="text-secondary-l">
+                    Una guía paso a pasito para entrarle al mundo del SAT sin morir en el intento. 
                   </p>
                 </div>
                 <div className="p-3">
@@ -50,24 +50,24 @@ const Asesorias = () => {
             <div className="col-lg-5 mb-3">
               <div
                 className="course-card rounded"
-                onClick={() => setOpenModal("taller")}
+                onClick={() => setOpenModal("practica")}
               >
-                <img src={taller} className="img-fluid" />
                 <div className="course-content">
                   <div className="d-flex mb-2">
                     <div className="label label-primary mr-2">
-                      TALLER ONLINE
+                      80 MIN
                     </div>
                     <div className="label label-primary mr-2">
-                      7 AGO - 10 AM
+                      VIA ZOOM
                     </div>
-                    <div className="label label-primary">$790 MXN</div>
+                    <div className="label label-primary">$950 MXN</div>
                   </div>
-                  <h4 className="mb-1 text-secondary">
-                    Taller práctico sobre el SAT
-                  </h4>
-                  <p className="font-sm text-secondary-l mb-3">
-                    ¿Tus clientes te piden factura y no tienes ni idea de cómo sacarla? Entonces este taller es para ti 😉
+                  <h2 className="mb-1 text-secondary">
+                    Asesoría práctica <span className="font-sm">(para personas fisicas)</span>
+                  </h2>
+                  <p className="font-sm text-secondary-l">
+                    Aprende cómo incorporarte ante el SAT, primeros pasos para
+                    la vida fiscal y super tips para llevar tu contabilidad.
                   </p>
                 </div>
                 <div className="p-3">
@@ -81,7 +81,7 @@ const Asesorias = () => {
 
       <div
         className={
-          openModal == "video" ? "section-modal open" : "section-modal"
+          openModal == "basica" ? "section-modal open" : "section-modal"
         }
       >
         <div
@@ -95,12 +95,12 @@ const Asesorias = () => {
           >
             X
           </button>
-          <BannerCursos />
+          <BannerBasica />
         </div>
       </div>
       <div
         className={
-          openModal == "taller" ? "section-modal open" : "section-modal"
+          openModal == "practica" ? "section-modal open" : "section-modal"
         }
       >
         <div
@@ -114,7 +114,7 @@ const Asesorias = () => {
           >
             X
           </button>
-          <BannerTaller />
+          <BannerAvanzada />
         </div>
       </div>
     </>

@@ -162,10 +162,19 @@ ul {
 
 .btn-primary,
 .btn-primary:hover,
-.btn-primary:active {
+.btn-primary:active,
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
   color: var(--purple) !important;
   background: var(--green) !important;
 }
+
+.btn-outline-primary {
+  border: 1px solid var(--green) !important;
+  color: var(--green) !important;
+}
+
+
 
 .btn-secondary,
 .btn-secondary:hover,
@@ -408,7 +417,7 @@ ul {
   color: var(--purple);
   position: absolute;
   right: -1rem;
-  top: -1rem;
+  top: 0;
   border-radius: 2rem;
   width: 2rem;
   height: 2rem;
