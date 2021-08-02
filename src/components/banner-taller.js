@@ -58,17 +58,23 @@ const BannerTaller = () => {
               Costo: <span className="text-primary">$790</span>
             </h4>
           </div>
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <a
-                className="btn btn-primary btn-lg mb-3 btn-floating btn-block"
-                style={{ width: "100%" }}
-                href="https://lahorasat.podia.com/hacks-del-sat-para-freelancers"
-                data-podia-embed="link"
-              >
-                Comprar acceso
-              </a>
-            </div>
+          <div className="d-flex">
+            <a
+              className="btn btn-primary btn-lg mb-3 mr-3"
+              style={{ width: "100%" }}
+              href="https://lahorasat.podia.com/hacks-del-sat-para-freelancers"
+              data-podia-embed="link"
+            >
+              Pagar en linea
+            </a>
+            <a
+              className="btn btn-outline-primary btn-lg mb-3"
+              style={{ width: "100%" }}
+              target="_blank"
+              href="https://wa.me/+525510722129"
+            >
+              Agendar por whats
+            </a>
           </div>
         </div>
       </div>

@@ -52,25 +52,23 @@ const BannerCursos = () => {
               (Pagas en linea y recibes acceso inmediato al video)
             </p>
           </div>
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <a
-                className="btn btn-primary btn-lg mb-3 btn-floating btn-block"
-                style={{ width: "100%" }}
-                href="https://lahorasat.podia.com/curso-en-video"
-                data-podia-embed="link"
-              >
-                Comprar curso
-              </a>
-            </div>
-            <div className="col-md-6">
-              <p class="text-light font-sm">
-                ¿Tienes un problema o duda en específico?{" "}
-                <a href="#asesorias" className="a-underline text-primary">
-                  Agenda una asesoria :)
-                </a>
-              </p>
-            </div>
+          <div className="d-flex">
+            <a
+              className="btn btn-primary btn-lg mb-3 mr-3"
+              style={{ width: "100%" }}
+              href="https://lahorasat.podia.com/curso-en-video"
+              data-podia-embed="link"
+            >
+              Pagar en linea
+            </a>
+            <a
+              className="btn btn-outline-primary btn-lg mb-3"
+              style={{ width: "100%" }}
+              target="_blank"
+              href="https://wa.me/+525510722129"
+            >
+              Agendar por whats
+            </a>
           </div>
         </div>
       </div>
