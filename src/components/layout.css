@@ -404,6 +404,12 @@ ul {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .section-modal.open {
+    z-index: 1000000;
+  }
+}
+
 .section-modal-backdrop {
   background: rgba(255,255,255,0.5);
   cursor: pointer;
@@ -426,6 +432,13 @@ ul {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .section-modal-close {
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+}
+
 .section-modal-content {
   position: absolute;
   left: 5vw;
@@ -437,6 +450,12 @@ ul {
 
 .section-modal-content > div {
   padding: 1rem;  
-  min-height: 100%;
+  /* min-height: 100%; */
+}
+
+@media (max-width: 768px) {
+  .section-modal-content > div {
+    padding: 1.5rem;
+  }
 }
 
