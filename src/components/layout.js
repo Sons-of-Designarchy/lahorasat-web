@@ -17,7 +17,7 @@ export default function Layout({ children, homepage }) {
       <Header homepage={homepage} />
       <div className="page-content">{children}</div>
       <div className="hero">
-        <div className="section container">
+        <div className="section section-gray container">
           <div className="col-lg-10 mx-auto">
             <h1 className="hero-title text-center">
               Todo lo que necesitas saber sobre{" "}

@@ -10,7 +10,7 @@ const Subscribe = () => {
   return (
     <div className="section text-center pt-3">
       <div className="container">
-        <p>
+        <p clasName="font-lg">
           Suscríbete a nuestro boletín y recibe un <span>10% de descuento</span>{" "}
           en tu primer curso
         </p>
