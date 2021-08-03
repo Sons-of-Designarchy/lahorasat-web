@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React from "react";
-import prev from "../images/curso-video.png";
+import prev from "../images/cursos/curso-video-cover.jpg";
 
 const BannerCursos = () => {
   return (

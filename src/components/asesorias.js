@@ -2,7 +2,7 @@
 import React from "react";
 import BannerAvanzada from "./banner-avanzada";
 import BannerBasica from "./banner-basica";
-import basica from "../images/cursos/asesoria.png";
+import basica from "../images/cursos/asesoria.jpg";
 import practica from "../images/cursos/asesoria-practica-2.jpg";
 
 const Asesorias = () => {

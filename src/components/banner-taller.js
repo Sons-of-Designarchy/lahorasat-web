@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React from "react";
-import prev from "../images/cursos/taller-hacks-cover.png";
+import prev from "../images/cursos/taller-hacks-cover.jpg";
 
 const BannerTaller = ({showImage}) => {
   return (
