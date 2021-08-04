@@ -9,7 +9,7 @@ const BannerTaller = ({showImage}) => {
         <div className="col-md-6">
           <p className="text-light uppercase mb-0 font-sm">TALLER EN ZOOM - 7 de agosto - 10am</p>
           <h2 className="mb-2 text-primary">
-          Taller práctico sobre el SAT
+            Hacks del SAT para Freelancers
           </h2>
           {showImage && (
             <img src={prev} className="img-fluid mb-4" style={{ borderRadius: 24, width: "80%" }} />

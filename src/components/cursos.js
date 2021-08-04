@@ -64,7 +64,7 @@ const Cursos = () => {
                     <div className="label label-primary">$790 MXN</div>
                   </div>
                   <h4 className="mb-1 text-secondary">
-                    Taller práctico sobre el SAT
+                  Hacks del SAT para Freelancers
                   </h4>
                   <p className="font-sm text-secondary-l">
                     Aprenderás a navegar en el portal, emitir facturas y hacer tus declaraciones. 
