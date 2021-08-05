@@ -59,7 +59,7 @@ const Cursos = () => {
                       TALLER ONLINE
                     </div>
                     <div className="label label-primary mr-2">
-                      7 AGO - 10 AM
+                      17 AGO - 7 PM
                     </div>
                     <div className="label label-primary">$790 MXN</div>
                   </div>
