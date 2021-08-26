@@ -50,7 +50,7 @@ const Cursos = () => {
             <div className="col-lg-5 mb-3">
               <div
                 className="course-card rounded"
-                onClick={() => setOpenModal("taller")}
+                // onClick={() => setOpenModal("taller")}
               >
                 <img src={taller} className="img-fluid" />
                 <div className="course-content">
@@ -59,7 +59,7 @@ const Cursos = () => {
                       TALLER ONLINE
                     </div>
                     <div className="label label-primary mr-2">
-                      17 AGO - 6 PM
+                      PRÓXIMAMENTE
                     </div>
                     <div className="label label-primary">$790 MXN</div>
                   </div>
@@ -71,7 +71,7 @@ const Cursos = () => {
                   </p>
                 </div>
                 <div className="p-3">
-                  <a className="btn btn-secondary btn-block">Ver detalles →</a>
+                  <a className="btn btn-secondary btn-block disabled">Proximamente...</a>
                 </div>
               </div>
             </div>
