@@ -1,5 +1,4 @@
 // import { Link } from "gatsby"
-import { Tab } from "bootstrap";
 import React from "react";
 import curso from "../images/cursos/curso-video-cover.jpg";
 import taller from "../images/cursos/taller-hacks-cover.jpg";
