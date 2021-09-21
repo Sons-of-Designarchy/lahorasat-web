@@ -1,9 +1,11 @@
 // import { Link } from "gatsby"
+import { Tab } from "bootstrap";
 import React from "react";
 import curso from "../images/cursos/curso-video-cover.jpg";
 import taller from "../images/cursos/taller-hacks-cover.jpg";
 import BannerCursos from "./banner-cursos";
 import BannerTaller from "./banner-taller";
+import BannerTallerBasico from "./banner-taller-basico";
 
 const Cursos = () => {
   const [openModal, setOpenModal] = React.useState("");
@@ -50,6 +52,32 @@ const Cursos = () => {
             <div className="col-lg-5 mb-3">
               <div
                 className="course-card rounded"
+                onClick={() => setOpenModal("taller-basico")}
+              >
+                <img src={taller} className="img-fluid" />
+                <div className="course-content">
+                  <div className="d-flex mb-2">
+                    <div className="label label-primary mr-2">
+                      TALLER EN ZOOM
+                    </div>
+                    <div className="label label-primary mr-2">$350 MXN</div>
+                    <div className="label label-primary">2 DE OCT - 11 AM</div>
+                  </div>
+                  <h4 className="mb-1 text-secondary">
+                    Taller online sobre el SAT
+                  </h4>
+                  <p className="font-sm text-secondary-l">
+                  A diferencia de nuestro curso en video, este curso es en vivo, por lo que aquí podrás resolver esas dudas sobre el SAT que no te dejan dormir tranquilx. 
+                  </p>
+                </div>
+                <div className="p-3">
+                  <a className="btn btn-secondary btn-block">Ver detalles →</a>
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-lg-5 mb-3">
+              <div
+                className="course-card rounded"
                 // onClick={() => setOpenModal("taller")}
               >
                 <img src={taller} className="img-fluid" />
@@ -74,7 +102,7 @@ const Cursos = () => {
                   <a className="btn btn-secondary btn-block disabled">Proximamente...</a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -118,6 +146,27 @@ const Cursos = () => {
           </button>
           <div className="section-purple">
             <BannerTaller />
+          </div>
+        </div>
+      </div>
+      <div
+        className={
+          openModal == "taller-basico" ? "section-modal open" : "section-modal"
+        }
+      >
+        <div
+          className="section-modal-backdrop"
+          onClick={() => setOpenModal("")}
+        ></div>
+        <div className="section-modal-content">
+          <button
+            onClick={() => setOpenModal("")}
+            className="section-modal-close"
+          >
+            X
+          </button>
+          <div className="section-purple">
+            <BannerTallerBasico />
           </div>
         </div>
       </div>
