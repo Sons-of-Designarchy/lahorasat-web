@@ -1,6 +1,5 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import BannerCursos from "../components/banner-cursos";
 import Asesorias from "../components/asesorias";
 import BannerTallerBasico from "../components/banner-taller-basico";
 
