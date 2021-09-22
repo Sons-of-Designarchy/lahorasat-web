@@ -89,6 +89,15 @@ const Header = ({ homepage }) => {
                   Asesorias
                 </a>
               </li>
+              <li className="nav-item">
+                <a 
+                  className="nav-link"
+                  activeClassName="active"
+                  href="/testimonios"
+                >
+                  Testimonios
+                </a>
+              </li>
             </ul>
             <div className="logo-container d-none d-lg-block">
               <Link to="/">
