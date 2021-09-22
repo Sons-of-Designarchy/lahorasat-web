@@ -274,6 +274,11 @@ ul {
   }
 }
 
+.section-white {
+  background: #fff url('../images/textura-white.png');
+  background-size: cover;
+}
+
 .section-purple {
   color: #fff;
   background: var(--purple) url('../images/textura-purple.png');
