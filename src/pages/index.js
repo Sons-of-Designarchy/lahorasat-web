@@ -4,13 +4,13 @@ import Layout from "../components/layout";
 import Redes from "../images/redes.png";
 import Asesorias from "../components/asesorias";
 import telowkento from "../images/colabs/telokwento.png";
-import mujeres from "../images/logo-header.svg";
-import fintual from "../images/logo-header.svg";
-import casaVolcan from "../images/logo-header.svg";
-import tipo from "../images/logo-header.svg";
-import animal from "../images/logo-header.svg";
-import legalmente from "../images/logo-header.svg";
-import chicmag from "../images/logo-header.svg";
+import mujeres from "../images/colabs/mujeres.png";
+import fintual from "../images/colabs/fintual.png";
+import casaVolcan from "../images/colabs/casa-volcan.png";
+import tipo from "../images/colabs/tipo-y-asi.png";
+import animal from "../images/colabs/animal.png";
+import legalmente from "../images/colabs/legalmente-creativo.png";
+import chicmag from "../images/colabs/chic.png";
 
 // markup
 const IndexPage = () => {
@@ -60,7 +60,7 @@ const IndexPage = () => {
         </div>
         <div className="section section-white">
           <div className="container">
-            <h4 className="text-center mb-4">Hemos colaborado con:</h4>
+            <h4 className="text-center mb-4">Algunas de nuestras colaboraciones</h4>
             <div className="row">
               <div className="col-lg-3 col-6">
                 <a
