@@ -514,3 +514,13 @@ column-count:         4;
   border: 1px solid #8158E8;
 }
 
+.boxed-bullet {
+  background: #E9E4F5;
+  border: 1px solid #603DBD;
+  box-shadow: 5px 5px 0 #603DBD;
+  padding: 0.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+

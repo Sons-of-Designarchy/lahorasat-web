@@ -2,7 +2,6 @@
 import React from "react";
 import curso from "../images/cursos/curso-video-cover.jpg";
 import taller from "../images/cursos/taller-hacks-cover.jpg";
-import BannerCursos from "./banner-cursos";
 import BannerTaller from "./banner-taller";
 import BannerTallerBasico from "./banner-taller-basico";
 
@@ -123,7 +122,7 @@ const Cursos = () => {
             X
           </button>
           <div className="section-purple">
-            <BannerCursos />
+            {/* <BannerCursos /> */}
           </div>
         </div>
       </div>
