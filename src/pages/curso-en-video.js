@@ -60,7 +60,7 @@ const CursoEnVideoPage = () => {
                     Pagar en linea
                   </a>
                   <a
-                    className="btn btn-outline-primary btn-lg mb-3"
+                    className="btn btn-outline-secondary btn-lg mb-3"
                     style={{ width: "100%" }}
                     target="_blank"
                     href="https://wa.me/+525510722129"
@@ -72,33 +72,7 @@ const CursoEnVideoPage = () => {
             </div>
           </div>
         </div>
-        <ul className="mb-3">
-          <li className="text-light font-sm mb-1">
-            Cómo incorporarte de forma correcta <i>(y que te convenga)</i> ante
-            el SAT{" "}
-          </li>
-          <li className="text-light font-sm mb-1">
-            Primeros pasos para la vida fiscal, cómo tus obligaciones y derechos
-          </li>
-          <li className="text-light font-sm mb-1">
-            Super tips para llevar tu contabilidad de manera sencilla
-          </li>
-        </ul>
-        <p className="text-light text-primary">
-          <strong>Este curso es para ti si...</strong>
-        </p>
-        <ul className="mb-4">
-          <li class="font-sm mb-1">
-            Acabas de salir de la carrera y no sabes como darte de alta
-          </li>
-          <li class="font-sm mb-1">
-            Eres asalariadx pero quieres aprender a sobrevivir ante el SATanas
-          </li>
-          <li class="font-sm mb-1">
-            Te acabas de incorporar y no sabes cual es el siguiente paso
-          </li>
-        </ul>
-        <Asesorias />
+        <Asesorias title="¿Tienes una duda especifica? Agenda una asesoria" />
       </Layout>
     </>
   );

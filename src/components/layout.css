@@ -465,12 +465,21 @@ ul {
   /* min-height: 100%; */
 }
 
+.section-modal-video {
+  width: 100%;
+  height: 600px;
+}
+
+
 @media (max-width: 768px) {
   .section-modal-content > div {
     padding: 1.5rem;
   }
-}
 
+  .section-modal-video {
+    height: 300px;
+  }
+}
 
 .masonry-container {
 -moz-column-count:    4;
