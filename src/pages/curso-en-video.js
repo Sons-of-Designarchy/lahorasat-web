@@ -29,7 +29,6 @@ const CursoEnVideoPage = () => {
                   <li className="boxed-bullet light">Cómo incorporarte de forma correcta</li>
                   <li className="boxed-bullet light">Primeros pasos para la vida fiscal</li>
                   <li className="boxed-bullet light">Tus obligaciones y derechos ante el SAT</li>
-                  <li className="boxed-bullet light">Tips para llevar tu contabilidad de manera sencilla</li>
                   <li className="boxed-bullet light">Paz mental de saber cómo lidiar con el SAT. 🤓</li>
                 </ul>
                 <p className="mt-3 font-sm">
