@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 const AsesoriasPage = () => {
   return (
     <>
-      <Layout>
+      <Layout title="Asesorias">
         <Asesorias />
         {/* <div className="section section-purple section-big">
           <div className="container">

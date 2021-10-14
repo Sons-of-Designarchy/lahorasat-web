@@ -16,7 +16,7 @@ const cursoBullets = [
 const CursoEnVideoPage = () => {
   return (
     <>
-      <Layout>
+      <Layout title="Curso en Video">
         <HeaderCurso />
         <BulletsCurso bullets={cursoBullets} />
         <div className="section section-white">

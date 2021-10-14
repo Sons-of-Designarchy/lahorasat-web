@@ -5,12 +5,12 @@ import Header from "./header";
 import "./layout.css";
 import Subscribe from "./subscribe";
 
-export default function Layout({ children, homepage }) {
+export default function Layout({ children, homepage, title }) {
   return (
     <main>
       <Helmet>
         <script src="https://cdn.podia.com/embeds.js" async="async"></script>
-        <title>La hora SAT® 🤓</title>
+        <title>{title ? `La hora SAT® 🤓  | ${title}` : "La hora SAT® 🤓 "}</title>
         <meta name="description" content="Somos una comunidad de educación fiscal. Hacemos contenido informativo, impartimos cursos y asesorías personalizadas que te ayudarán a entender cómo funciona el SAT." />
         <meta name="keywords" content="sat, cursos, asesorias, educación fiscal, impuestos" />
       </Helmet>

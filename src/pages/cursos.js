@@ -6,7 +6,7 @@ import Cursos from "../components/cursos";
 const AsesoriasPage = () => {
   return (
     <>
-      <Layout>
+      <Layout title="Cursos">
         <Cursos />
       </Layout>
     </>
