@@ -9,7 +9,6 @@ const cursoBullets = [
   "Acceso ilimitado para siempre",
   "Online y a tu propio ritmo",
   "Material extra de apoyo",
-  "Bloopers de la grabación 😝",
 ];
 
 // markup
