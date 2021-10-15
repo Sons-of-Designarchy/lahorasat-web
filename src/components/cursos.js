@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React from "react";
-import curso from "../images/cursos/curso-video-cover.jpg";
+import curso from "../images/cursos/curso-en-video/foto-home.jpg";
 import taller from "../images/cursos/taller-hacks-cover.jpg";
 import BannerCursos from "./banner-cursos";
 import BannerTaller from "./banner-taller";
