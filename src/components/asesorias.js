@@ -5,7 +5,7 @@ import BannerBasica from "./banner-basica";
 import basica from "../images/cursos/asesoria.jpg";
 import practica from "../images/cursos/asesoria-practica-2.jpg";
 
-const Asesorias = () => {
+const Asesorias = ({ title }) => {
   const [openModal, setOpenModal] = React.useState("");
 
   return (
@@ -13,7 +13,7 @@ const Asesorias = () => {
       <div className="section section-green">
         <div className="container">
           <h3 className="text-center text-secondary">
-            ¿Necesitas asesoría personalizada? 
+            {title ? title : "¿Necesitas asesoría personalizada? "}
           </h3>
           <p className="text-secondary text-center mb-5">
             Tenemos dos modelos, si tienes dudas de cual elegir, <a href="https://wa.me/+525510722129" className="text-secondary text-underline">mándanos un Whatsapp</a>.
