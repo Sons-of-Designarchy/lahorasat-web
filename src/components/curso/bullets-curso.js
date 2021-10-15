@@ -9,7 +9,7 @@ const BulletsCurso = ({ bullets }) => {
           <h2 className="mb-5">¿Qué incluye?</h2>
           <div className="boxed-bullet-container row mb-5">
             {bullets.map((bullet) => (
-              <div className="col-lg-4">
+              <div className="col-lg-6">
                 <div className="boxed-bullet mb-3">{bullet}</div>
               </div>
             ))}
