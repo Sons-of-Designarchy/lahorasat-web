@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "gatsby-image";
+// import Image from "gatsby-plugin-image";
 import { StructuredText } from "react-datocms";
 
 export default function PostBody({ content }) {
@@ -10,7 +10,7 @@ export default function PostBody({ content }) {
           data={content}
           renderBlock={({ record }) => {
             if (record.__typename === "DatoCmsImageBlock") {
-              return <Image fluid={record.image.fluid} />;
+              return <>image here</>;
             }
 
             return (

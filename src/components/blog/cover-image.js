@@ -1,19 +1,20 @@
 import React from "react";
-import Image from "gatsby-image";
+// import Image from "gatsby-plugin-image";
 import cn from 'classnames'
 import { Link } from 'gatsby'
 
 export default function CoverImage({ title, fluid, slug }) {
   const image = (
-    <Image
-      fluid={{
-        ...fluid,
-        alt: `Cover Image for ${title}`,
-      }}
-      className={cn('shadow-small', {
-        'hover:shadow-medium transition-shadow duration-200': slug,
-      })}
-    />
+    // <Image
+    //   fluid={{
+    //     ...fluid,
+    //     alt: `Cover Image for ${title}`,
+    //   }}
+    //   className={cn('shadow-small', {
+    //     'hover:shadow-medium transition-shadow duration-200': slug,
+    //   })}
+    // />
+    <>img here</>
   )
   return (
     <div className="-mx-5 sm:mx-0">
