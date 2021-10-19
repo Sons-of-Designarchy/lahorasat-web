@@ -42,7 +42,7 @@ import Asesorias from "../components/asesorias";
 
 const Testimonios = () => {
   return (
-    <Layout>
+    <Layout title="Testimonios">
       <div className="section section-purple">
         <div className="container text-center">
           <div className="mb-5">

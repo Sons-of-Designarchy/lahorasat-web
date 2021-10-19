@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React from "react";
-import curso from "../images/cursos/curso-video-cover.jpg";
+import curso from "../images/cursos/curso-en-video/foto-home.jpg";
 import taller from "../images/cursos/taller-hacks-cover.jpg";
 import BannerCursos from "./banner-cursos";
 import BannerTaller from "./banner-taller";
@@ -23,9 +23,9 @@ const Cursos = () => {
           <div className="row no-gutters">
             <div className="col-lg-1"></div>
             <div className="col-lg-5 mb-3">
-              <div
+              <a
                 className="course-card rounded"
-                onClick={() => setOpenModal("video")}
+                href="/curso-en-video"
               >
                 <img src={curso} className="img-fluid" />
                 <div className="course-content">
@@ -46,7 +46,7 @@ const Cursos = () => {
                 <div className="p-3">
                   <a className="btn btn-secondary btn-block">Ver detalles →</a>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="col-lg-5 mb-3">
               <div
@@ -60,7 +60,7 @@ const Cursos = () => {
                       TALLER EN ZOOM
                     </div>
                     <div className="label label-primary mr-2">$350 MXN</div>
-                    <div className="label label-primary">2 DE OCT - 11 AM</div>
+                    <div className="label label-primary">PRÓXIMAMENTE</div>
                   </div>
                   <h4 className="mb-1 text-secondary">
                     Taller online sobre el SAT
@@ -70,7 +70,7 @@ const Cursos = () => {
                   </p>
                 </div>
                 <div className="p-3">
-                  <a className="btn btn-secondary btn-block">Ver detalles →</a>
+                  <a className="btn btn-secondary btn-block disabled">Próximamente</a>
                 </div>
               </div>
             </div>
